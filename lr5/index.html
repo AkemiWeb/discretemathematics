@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця істинності</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Генератор таблиць істинності</h1>
+    <p>'¬': '!', Заперечення <br>
+        '~': '===', Еквівалентність<br>
+        '^': '&&', Логічне І<br>
+        '→': '||' Імплікація
+    </p>
+    <input type="text" id="expression" placeholder="Введіть булевий вираз" value="!(p === q) || (p && !q)">
+    <button onclick="generateTable()">Побудувати таблицю</button>
+    <table id="truth-table" border="1"></table>
+</div>
+<script src="script/script.js"></script>
+</body>
+</html>
