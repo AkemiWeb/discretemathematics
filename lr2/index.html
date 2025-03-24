@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Множини та побітові операції</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Операції над множинами</h1>
+    <div class="inputs">
+        <label for="setA">Множина A: </label>
+        <input type="text" id="setA" placeholder="9, 7, 2, 4, 6, 8">
+    </div>
+    <div class="inputs">
+        <label for="setB">Множина B: </label>
+        <input type="text" id="setB" placeholder="4, 7, 6, 5, 8, 1">
+    </div>
+    <div class="outputs">
+        <button onclick="performOperations()">Виконати операції</button>
+    </div>
+    <div class="results">
+        <h2>Результати</h2>
+        <p>Універсальна множина: U = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}</p>
+        <br>
+        <p id="unionResult">Об'єднання: </p>
+        <p id="intersectionResult">Перетин: </p>
+        <p id="differenceResult">Різниця: </p>
+        <p id="symmetricDifferenceResult">Симетрична різниця: </p>
+        <p id="cartesianProductResult">Декартовий добуток: </p>
+    </div>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>
