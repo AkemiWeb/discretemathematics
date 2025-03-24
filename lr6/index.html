@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка властивостей булевих функцій</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Перевірка властивостей булевих функцій</h1>
+    <table id="truth-table">
+        <thead>
+        <tr>
+            <th>x</th>
+            <th>y</th>
+            <th>Z</th>
+            <th>f</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td><input type="number" id="f000" value="1" min="0" max="1"></td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td><input type="number" id="f001" value="1" min="0" max="1"></td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td><input type="number" id="f010" value="0" min="0" max="1"></td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td><input type="number" id="f011" value="0" min="0" max="1"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td><input type="number" id="f100" value="0" min="0" max="1"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td><input type="number" id="f101" value="0" min="0" max="1"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td><input type="number" id="f110" value="1" min="0" max="1"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td><input type="number" id="f111" value="1" min="0" max="1"></td>
+        </tr>
+        </tbody>
+    </table>
+    <button onclick="checkFunctionProperties()">Перевірити властивості</button>
+    <p>'!': '¬', Заперечення</p>
+    <div id="result"></div>
+    <h3>Дісконала диз’юнктивна нормальна форма (ДНФ):</h3>
+    <div id="dnf-result"></div>
+    <h3>Дісконала кон’юнктивна нормальна форма (КНФ):</h3>
+    <div id="knf-result"></div>
+</div>
+<script src="script/script.js"></script>
+</body>
+</html>
