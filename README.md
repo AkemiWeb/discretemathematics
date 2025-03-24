@@ -1,1 +1,1 @@
-# discretemathematics
+# discretestructures
