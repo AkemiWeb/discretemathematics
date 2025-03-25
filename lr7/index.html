@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка властивостей графів</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Введіть матрицю суміжності</h2>
+    <textarea id="adjacencyMatrix" placeholder="Наприклад:
+0 1 1
+1 0 1
+1 1 0"></textarea><br>
+    <button onclick="processMatrix()">Обробити</button>
+
+    <h2>Матриця інцидентності</h2>
+    <div id="incidenceMatrix"></div>
+
+    <h2>Список ребер</h2>
+    <div id="edgeList"></div>
+</div>
+<script src="script/script.js"></script>
+</body>
+</html>
